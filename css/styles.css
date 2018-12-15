@@ -64,6 +64,7 @@ svg#scene {
 #mtns {
   opacity: .5;
   transform-origin: center;
+  transform-box: fill-box;
 }
 
 @media (min-width: 1024px){
