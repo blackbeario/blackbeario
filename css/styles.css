@@ -1,0 +1,73 @@
+html, body { margin:0; padding:0; }
+
+.branding {
+  margin: 5px 0 0;
+}
+
+.headerNav li {
+  line-height: 60px;
+}
+
+.siteHeader {
+  min-height: 60px;
+  height: 60px;
+}
+
+.bear-logo {
+  width: 20%;
+  margin: 2em 3em;
+  position: absolute;
+}
+
+svg#scene {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right:0;
+  width: 100vw;
+  z-index: -1;
+}
+
+#spacer {
+  position: relative;
+  top: -60px;
+  left: -45vh;
+  bottom:0;
+  right:0;
+  height: 100vh; /* overridden by JS */
+  width: 100vw;
+}
+
+.welcomeIntro {
+  padding: 0;
+  color: #666;
+}
+
+.intro-text {
+  position: absolute;
+  width: 40vh;
+  right: 1em;
+  top: calc(60px + 1em); /* offset header */
+  z-index: 999;
+}
+
+#eagle_path {
+  fill: none;
+}
+
+#clouds {
+  opacity: .15;
+}
+
+#mtns {
+  opacity: .5;
+  transform-origin: center;
+}
+
+@media (min-width: 1024px){
+  svg#scene, #spacer {
+    left: 0;
+  }
+}
