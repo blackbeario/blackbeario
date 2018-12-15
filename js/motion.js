@@ -8,6 +8,7 @@ function moveScene() {
 
     mtns.setAttribute("style", 'opacity: ' + opacity);
     mtns.setAttribute("style",'transform: scale('+scrolled +','+scrolled +')');
+    mtns.setAttribute("style",'-webkit-transform: scale('+scrolled +','+scrolled +')');
 
   var eaglePath = document.getElementById("eagle_path");
   // Calculate distance along the path the eagle should be for the current scroll amount

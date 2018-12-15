@@ -63,7 +63,7 @@ svg#scene {
 
 #mtns {
   opacity: .5;
-  transition: transform .5s linear;
+  transition: transform .75s linear;
   transform-origin: center;
 }
 
