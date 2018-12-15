@@ -4,11 +4,10 @@ function moveScene() {
       scrolled = window.scrollY / ( docHeight - window.innerHeight ) + 1,
       opacity = scrolled / 2,
       maxScrollY = document.documentElement.scrollHeight - window.innerHeight,
-      mtns = document.getElementById("mtns"),
-      mtnsWidth = mtns.clientWidth / 2;
-      // mtns.setAttribute("transform",'scale(' + scrolled + ')');
-      mtns.setAttribute("transform",'scale(' + scrolled + ')');
-      mtns.setAttribute("style", 'opacity: ' + opacity);
+      mtns = document.getElementById("mtns");
+
+    mtns.setAttribute("style", 'opacity: ' + opacity);
+    mtns.setAttribute("style",'transform: scale('+scrolled +','+scrolled +')');
 
   var eaglePath = document.getElementById("eagle_path");
   // Calculate distance along the path the eagle should be for the current scroll amount
@@ -26,9 +25,6 @@ function moveScene() {
   // Position the eagle at "pos" rotated by "angle"
   var eagle = document.getElementById("eagle");
   eagle.setAttribute("transform", "translate(" + pos.x + "," + pos.y + ") rotate(" + rad2deg(angle) + ")");
-  // Clouds animation
-  var  clouds = document.getElementById("clouds");
-  // clouds.setAttribute("transform", "translate(" + pos.x + "," + pos.y + ")");
 
   // Mtn Left animation
   var mtnLeft = document.getElementById("mtn_left");
