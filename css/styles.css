@@ -2,20 +2,24 @@ html, body { margin:0; padding:0; }
 
 .branding {
   margin: 5px 0 0;
+  display: none;
 }
 
 .headerNav li {
   line-height: 60px;
+  color: #282B2D;
 }
 
 .siteHeader {
   min-height: 60px;
   height: 60px;
+  background: none;
+  padding: 0 3em;
 }
 
 .bear-logo {
   width: 20%;
-  margin: 2em 3em;
+  margin: -2em 3em 0;
   position: absolute;
 }
 
@@ -46,11 +50,16 @@ svg#scene {
 }
 
 .intro-text {
+  margin: 0;
   position: absolute;
-  width: 40vh;
-  right: 1em;
+  width: 33%;
+  right: 3em;
   top: calc(60px + 1em); /* offset header */
   z-index: 999;
+}
+
+.intro-text p {
+  text-align: justify;
 }
 
 #eagle_path {
@@ -64,6 +73,24 @@ svg#scene {
 #mtns {
   opacity: .5;
   transform-origin: center;
+}
+
+#reviews {
+  background-color: #282B2D;
+  color: #f4f4f4;
+  padding: 2em 3em;
+}
+
+.review {
+  display: inline-block;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 47%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1em;
+  height: 260px;
+  overflow: scroll;
 }
 
 @media (min-width: 1024px){
